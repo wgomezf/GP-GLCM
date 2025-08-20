@@ -1,4 +1,4 @@
-# GLCM-based texture features constructed by Genetic Programming for Breast Tumor Classification
+# GLCM-based texture features constructed by genetic programming for breast tumor classification
 
 Two sets of GLCM-based texture features for breast tumor classification in ultrasound are provided. These texture features were automatically constructed using the genetic programming (GP) algorithm, and they outperformed the well-known Haralick features that are widely used in radiomics for tumor classification. The success of these novel features is due to the fact that they were specifically constructed for a particular classification task, while Haralick features are general-purpose texture features and may not effectively describe the tumors' nature to distinguish them into benign and malignant classes.
 
