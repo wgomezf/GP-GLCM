@@ -27,14 +27,14 @@ The second set contains three features that achieved a classification performanc
 
 These GLCM-based texture features were implemented in MATLAB 2024b. The GPGLCMfeats.zip file contains the source codes and data organized into the following folders:
 
-* BUSI: It contains the BUSI dataset (https://doi.org/10.1016/j.dib.2019.104863) with benign and malignant cases, where the images were already cropped to obtain the tumor ROI for texture analysis.
+* BUS: It contains the breast ultrasound datasets (UDIAT, BUSI, and Thammasat) with benign and malignant cases, where the images were already cropped to obtain the tumor ROI for texture analysis.
 * data: It contains the files BUSBRA3feats.mat and BUSBRA10feats.mat with the 3 or 10 texture features computed on the BUS-BRA dataset (http://doi.org/10.1002/mp.16812). These files contain two variables: X, the feature space, and Y, the class labels (0-benign and 1-malignant), which can be used as training data.
 * funset: It contains the mathematical operators in the equations of texture features; some of them are protected to avoid indeterminations.
 * stats: It contains some basic statistics used in the equations of texture features.
 * gpfeats: It contains the functions GP3feats.m and GP10feats.m that compute the texture feature in the tables above.
 * misc: Miscellaneous functions.
 
-Run the program demo.m to calculate the texture features on the BUSI dataset. Next, a logistic regression model is trained using BUS-BRA texture data. Finally, the BUSI texture data is used as a test set to evaluate the classification performance. It is necessary to set the variable 'opt' to 3 or 10 to calculate three or ten texture features.
+Run the program demo.m to calculate the texture features on the BUS datasets. Next, a logistic regression model is trained using BUS-BRA texture data. Finally, the BUS texture data is used as a test set to evaluate the classification performance, reproducing the results in the paper. It is necessary to set the variable 'opt' to 3 or 10 to calculate three or ten texture features.
 
 Any use of these codes, please cite:
 
