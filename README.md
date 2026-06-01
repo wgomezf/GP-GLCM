@@ -27,6 +27,8 @@ The second set contains three features that achieved classification performance 
 
 These GLCM-based texture features were implemented in MATLAB 2024b. The GPGLCMfeats.zip file contains the source codes and data organized into the following folders:
 
+[`GPGLCMfeats.zip`](https://github.com/wgomezf/GP-GLCM/GPGLCMfeats.zip)
+
 * BUS: It contains the breast ultrasound datasets (UDIAT, BUSI, and Thammasat) with benign and malignant cases, where the images were already cropped to obtain the tumor ROI for texture analysis.
 * data: It contains the files BUSBRA3feats.mat and BUSBRA10feats.mat with the 3 or 10 texture features computed on the BUS-BRA dataset (http://doi.org/10.1002/mp.16812). These files contain two variables: X, the feature space, and Y, the class labels (0 = benign and 1 = malignant), which can be used as training data.
 * funset: It contains the mathematical operators in the equations of texture features; some of them are protected to avoid indeterminations.
