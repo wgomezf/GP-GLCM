@@ -1,6 +1,6 @@
 # GLCM-based texture features constructed by genetic programming for breast tumor classification
 
-Two sets of GLCM-based texture features for breast tumor classification in ultrasound are provided. These texture features were automatically generated using the genetic programming (GP) algorithm and outperformed the well-known Haralick features, widely used in radiomics for tumor classification. The success of these novel features stems from their specific construction for a particular classification task, whereas Haralick features are general-purpose texture features that may not effectively describe tumors' nature to distinguish them into benign and malignant classes.
+Two sets of GLCM-based texture features for breast tumor classification in ultrasound are provided. These texture features were automatically generated using the genetic programming (GP) algorithm and outperformed the well-known Haralick features, widely used in radiomics for tumor classification. The success of these novel features stems from their specific construction for a particular classification task, whereas Haralick features are general-purpose texture features that may not effectively capture the nature of tumors to distinguish them as benign or malignant.
 
 The first set contains 10 texture features representing the best configuration obtained in 1000 runs of the GP algorithm tested with different configurations, including the number of trees (i.e., number of features) and tree depth (i.e., complexity of the expressions).
 
@@ -17,7 +17,7 @@ The first set contains 10 texture features representing the best configuration o
 | $z_9$    | $\sum\nolimits_{ij} {\sqrt {p(i,j)_1^{90}} } - HX_1^{135}$                                                                                   |
 | $z_{10}$ | $\sum\nolimits_{ij} {{\textstyle{{p(i,j)_4^{90} - p(i,j)_1^0} \over {p(i,j)_4^{90}/p(i,j)_4^0}}}}$                                           |
 
-The second set contains three features that achieved classification performance statistically similar to that of the best set, according to the McNemar test (p-value > 0.6). This feature set represents the smallest feature space dimensionality that can perform similarly to the best one.
+The second set contains three features that achieved classification performance statistically similar to that of the best set, according to the McNemar test (p-value > 0.6). This feature set represents the smallest feature-space dimensionality that performs as well as the best one.
 
 | ID    | Expression                                                                                                             |
 |-------|------------------------------------------------------------------------------------------------------------------------|
@@ -34,8 +34,8 @@ These GLCM-based texture features were implemented in MATLAB 2024b. The GPGLCMfe
 * gpfeats: It contains the functions GP3feats.m and GP10feats.m that compute the texture feature in the tables above.
 * misc: Miscellaneous functions.
 
-Run the program demo.m to calculate the texture features on the BUS datasets. Next, a logistic regression model is trained using BUS-BRA texture data. Finally, the BUS texture data is used as a test set to evaluate the classification performance, reproducing the results in the paper. It is necessary to set the 'opt' variable to 3 or 10 to calculate 3 or 10 texture features.
+Run the program demo.m to compute the texture features on the BUS datasets. Next, a logistic regression model is trained using BUS-BRA texture data. Finally, the BUS texture data is used as a test set to evaluate classification performance, thereby reproducing the results reported in the paper. It is necessary to set the 'opt' variable to 3 or 10 to compute 3 or 10 texture features, respectively.
 
 Any use of these codes, please cite:
 
-Wilfrido Gomez-Flores, "Constructing GLCM-based Texture Feature Expressions Using Genetic Programming for Breast Tumor Classification", In Peer-Review, 2025.
+Wilfrido Gomez-Flores, "Constructing GLCM-based Texture Feature Expressions Using Genetic Programming for Breast Tumor Classification", In Peer-Review, 2026.
