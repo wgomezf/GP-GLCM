@@ -25,7 +25,7 @@ The second set contains three features that achieved classification performance 
 | $z_2$ | $\sum\nolimits_{ij} {{\textstyle{{HX_8^{90}} \over {HX_4^0 - p(i,j)_1^{90}}}}}$                                        |
 | $z_3$ | $\sum\nolimits_{ij} {{\textstyle{{HY_4^{45}/HX_8^{90}} \over {p(i,j)_4^{90}}}}}$                                       |
 
-These GLCM-based texture features were implemented in MATLAB 2024b. The [`GPGLCMfeats.zip`](https://github.com/wgomezf/GP-GLCM/blob/main/GPGLCMfeats.zip) file contains the source codes and data organized into the following folders:
+These GLCM-based texture features were implemented in MATLAB 2024b. The [`GPGLCMfeats.zip`](https://drive.google.com/file/d/1PK1Q8LwPzTo6kCvJdnfXsApzmWOf65Qj/view?usp=sharing) file contains the source codes and data organized into the following folders:
 
 
 
