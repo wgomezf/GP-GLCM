@@ -40,4 +40,4 @@ Run the program demo.m to compute the texture features on the BUS datasets. Next
 
 Any use of these codes, please cite:
 
-Wilfrido Gomez-Flores, "Constructing GLCM-based Texture Feature Expressions Using Genetic Programming for Breast Tumor Classification", In Peer-Review, 2026.
+Wilfrido Gomez-Flores, "Constructing GLCM-based texture feature expressions using genetic programming for breast tumor classification", Applied Soft Computing, Vol. 203, Part A, pp. 116027, 2026. [`DOI: 10.1016/j.asoc.2026.116027`](https://doi.org/10.1016/j.asoc.2026.116027).
